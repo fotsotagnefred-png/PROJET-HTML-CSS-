@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    /* Utilisation du nom exact de ton image de fond */
+    background-image: url('image 2 (1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Un petit fond semi-transparent pour aider à lire le texte si besoin */
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.main-logo {
+    width: 160px; /* Taille ajustée pour ton logo */
+    height: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #000;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 0;
+    font-weight: 900;
+}
+
+.text-content p {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.form-container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-mail {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #e0d8d8;
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn-play {
+    width: 100%;
+    padding: 18px 0;
+    border-radius: 15px;
+    background-color: #ff2b2b;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.help-link {
+    margin-top: 40px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
