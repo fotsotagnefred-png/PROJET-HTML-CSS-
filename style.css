@@ -1,4 +1,3 @@
-
 body {
     margin: 0%;
     font-family: Arial, sans-serif;
@@ -302,3 +301,239 @@ input {
     background-color: #333;
     transform: scale(1.05);
 } 
+/*page4*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    /* Ton fond bleu à rayons */
+    background-image: url('./background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-logo {
+    width: 140px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #000;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 0;
+    font-weight: 900;
+    text-transform: none; /* Pour garder "Roue chanceuse" tel quel */
+}
+
+.text-content p {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.form-container {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Champ Mail (gris clair arrondi) */
+.input-mail {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #e0d8d8; /* Gris clair comme sur l'image */
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Bouton rouge */
+.btn-play {
+    width: 100%;
+    padding: 18px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff2b2b; /* Rouge vif */
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.help-link {
+    margin-top: 60px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/*page2 */
+body {
+
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* Utilisation de ton image de fond */
+    background-image: url('image/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.logo {
+    width: 180px; /* Taille du logo Foot Locker */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn-participer {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.btn-participer:hover {
+    background-color: #333;
+    transform: scale(1.05);
+} 
+/*page3*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    /* Ton image de fond à rayons */
+    background-image: url('./background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Pour que le texte "Bonne chance" soit visible sur le bleu */
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espace entre le logo, la roue et le bouton */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.roue-img {
+    width: 280px; /* Ajuste la taille de la roue ici */
+    height: auto;
+    /* Petit effet d'ombre pour que la roue ressorte sur le fond bleu */
+    filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.3));
+}
+
+.btn-spin {
+    background-color: #26ff71; /* Le vert fluo de ton image */
+    color: #000;
+    border: none;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.luck-text {
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
