@@ -7,7 +7,7 @@ body, html {
 
 body {
     /* Utilisation du nom exact de ton image de fond */
-    background-image: url('image 2 (1).jpg');
+    background-image: url('./background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,3 +93,86 @@ h1 {
     font-size: 0.9rem;
     font-weight: bold;
 }
+/*page2*/
+body {
+
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* Utilisation de ton image de fond */
+    background-image: url('./background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.logo {
+    width: 180px; /* Taille du logo Foot Locker */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 1,90rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn-participer {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.btn-participer:hover {
+    background-color: #333;
+    transform: scale(1.05);
+} 
