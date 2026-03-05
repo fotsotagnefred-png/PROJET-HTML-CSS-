@@ -2,36 +2,43 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foot Locker - Jeu</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo-section">
-            <img src="./logo.png" alt="Foot Locker Logo" class="logo">
-        </div>
+    <div class="main-wrapper">
+        <header class="header">
+            <img src="./logo.png" alt="Foot Locker" class="logo">
+        </header>
 
-        <h1>CRÉE TON COMPTE POUR JOUER !</h1>
-        <p class="subtitle">Tentez de gagner une belle réduction sur un article de la nouvelle collection footlocker de votre choix.</p>
+        <main class="content-area">
+            <h1 class="title">REGLES DU JEU</h1>
+            <p class="subtitle">comment jouer !</p>
 
-        <form id="registration-form">
-            <div class="input-group">
-                <label>Nom et prénom :</label>
-                <input type="text" placeholder="Entrer votre nom et prénom" required>
+            <div class="info-block">
+                <h2 class="section-label">les gains possibles</h2>
+                <ul class="rewards-list">
+                    <li>1000pts</li>
+                    <li>100pts</li>
+                    <li>200pts</li>
+                    <li>500pts</li>
+                    <li>Bonus x2</li>
+                    <li>Rejouer</li>
+                    <li>Perdu</li>
+                </ul>
             </div>
 
-            <div class="input-group">
-                <label>Email :</label>
-                <input type="email" placeholder="Entrer votre adresse email" required>
+            <div class="info-block">
+                <h2 class="section-label">Tentatives</h2>
+                <p class="attempts-text">2 tentatives par jour</p>
             </div>
+        </main>
 
-            <div class="input-group">
-                <label>Nom votre numéro :</label>
-                <input type="tel" placeholder="Entrer votre numéro" required>
-            </div>
-
-            <button type="submit" class="btn-participer">PARTICIPER</button>
-        </form>
+        <footer class="footer">
+            <button class="play-button">J'ai compris, Jouer ?</button>
+        </footer>
+        <a href="page3.html" class="btn-play">J'ai compris, jouer ?</a>
     </div>
 </body>
 </html>

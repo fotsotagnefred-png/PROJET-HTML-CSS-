@@ -1,21 +1,18 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-}
 
 body {
-    /* Utilisation du nom exact de ton image de fond */
+    font-family: Arial, sans-serif;
+    /* utilisation de ton image de fond */
     background-image: url('./background.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-align: center;
 }
 
 .main-wrapper {
@@ -25,10 +22,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Un petit fond semi-transparent pour aider à lire le texte si besoin */
-    background-color: rgba(255, 255, 255, 0.1); 
+    
+    /* On force l'absence de fond et de bordure */
+    background: transparent !important; 
+    border: none !important;
+    box-shadow: none !important;
+    
     padding: 20px;
-    border-radius: 20px;
 }
 
 .main-logo {
@@ -94,6 +94,131 @@ h1 {
     font-weight: bold;
 }
 /*page2*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+body, html {
+     
+    height: 100%;
+    width: 100%;
+    margin: 0; /* Important pour enlever les bords blancs */
+    overflow: hidden;
+    
+    /* Copie ICI ton code de background (les rayons bleus) */
+    background: repeating-conic-gradient(
+        from 0deg at 50% 50%,
+        #78c6db 0deg 15deg,
+        #5dbad3 15deg 30deg
+    );
+}
+
+
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    
+    /* Arrière-plan rayons sur TOUT l'écran */
+    background: repeating-conic-gradient(
+        from 0deg at 50% 50%,
+        #78c6db 0deg 10deg,
+        #5dbad3 10deg 20deg
+    );
+    position: relative;
+}
+
+/* Texture granuleuse sur tout l'écran */
+.main-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('./background.png');
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.header, .content-area, .footer {
+    z-index: 2; /* Pour passer au dessus de la texture */
+}
+
+.logo {
+    width: 140px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.content-area {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: -15px;
+}
+
+.section-label {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.rewards-list {
+    list-style: none;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.attempts-text {
+    font-size: 1rem;
+}
+
+.footer {
+    width: 100%;
+    max-width: 400px;
+}
+
+.play-button {
+    width: 100%;
+    padding: 18px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.play-button:hover {
+    transform: scale(1.03);
+}
+
+/* Ajustement pour les petits écrans mobiles */
+@media (max-height: 700px) {
+    .title { font-size: 1.8rem; }
+    .content-area { gap: 15px; }
+    .logo { width: 100px; }
+}
+/*page3*/
 body {
 
     margin: 0;
