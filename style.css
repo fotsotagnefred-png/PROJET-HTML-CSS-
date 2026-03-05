@@ -1,5 +1,6 @@
 
 body {
+    margin: 0%;
     font-family: Arial, sans-serif;
     /* utilisation de ton image de fond */
     background-image: url('./background.png');
